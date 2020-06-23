@@ -32,12 +32,12 @@ class Header extends React.Component {
     console.log("Header this.props.auth:", this.props.auth);
     return (
       <div className="ui secondary pointing menu" style={{ marginTop: "5px" }}>
-        <Link to={this.props.auth ? "/" : "/"} className="item active">
+        <Link to={this.props.auth ? "/paws" : "/"} className="item active">
           PawSearch
         </Link>
         <div className="right menu">
           <a to="/" className="item">
-            All Recipes
+            All Paws
           </a>
           <div>{this.renderLogin()}</div>
         </div>

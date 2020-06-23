@@ -14,6 +14,10 @@ import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 import history from "../history";
 
+import LandingPage from "./LandingPage";
+import Dashboard from "./Dashboard";
+import PawNew from "./paws/PawNew";
+
 class App extends React.Component {
   componentDidMount() {
     console.log(this.props);
@@ -25,6 +29,9 @@ class App extends React.Component {
         <Router history={history}>
           <div>
             <Header />
+            <Route path="/" exact component={LandingPage} />
+            <Route path="/paws" exact component={Dashboard} />
+            <Route path="/paws/new" exact component={PawNew} />
           </div>
         </Router>
       </div>
