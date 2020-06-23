@@ -8,12 +8,27 @@ class Dashboard extends React.Component {
       <div>
         <PawList />
         <Link
-          style={{ marginTop: "15px" }}
+          style={{ marginTop: "25px" }}
           to="/paws/new"
           className="ui circular red right floated icon big button"
         >
           <i className="plus icon"></i>
         </Link>
+
+        <div
+          style={{
+            marginTop: "25px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <div className="ui compact menu">
+            <Link to="/matches" className="item">
+              <i className="icon heart"></i> Matches
+              <div className="floating ui red circular label">1</div>
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
@@ -38,4 +53,17 @@ class Dashboard extends React.Component {
     );
   }
 }
+*/
+/*
+<Link
+          style={{
+            marginTop: "15px",
+            display: "flex",
+            justifyContent: "center",
+          }}
+          to="/paws/new"
+          className="ui circular red icon big button"
+        >
+          <i className="plus icon"></i>
+        </Link>
 */

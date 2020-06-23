@@ -17,6 +17,7 @@ import history from "../history";
 import LandingPage from "./LandingPage";
 import Dashboard from "./Dashboard";
 import PawNew from "./paws/PawNew";
+import Matches from "./Matches";
 
 class App extends React.Component {
   componentDidMount() {
@@ -32,6 +33,7 @@ class App extends React.Component {
             <Route path="/" exact component={LandingPage} />
             <Route path="/paws" exact component={Dashboard} />
             <Route path="/paws/new" exact component={PawNew} />
+            <Route path="/matches" exact component={Matches} />
           </div>
         </Router>
       </div>

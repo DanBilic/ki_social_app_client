@@ -21,7 +21,12 @@ class PawList extends React.Component {
               <p>{paw.description}</p>
             </div>
           </div>
+          <div className="image">
+            <img src="/images/red_cat.jpg" />
+          </div>
+
           <div className="extra content">
+            Location:
             <p>{paw.ingredients}</p>
           </div>
           <div className="extra content">

@@ -36,9 +36,6 @@ class Header extends React.Component {
           PawSearch
         </Link>
         <div className="right menu">
-          <a to="/" className="item">
-            All Paws
-          </a>
           <div>{this.renderLogin()}</div>
         </div>
       </div>
